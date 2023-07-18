@@ -103,6 +103,15 @@ body{
 .nav-items-container .login-btn i{
     gap: 5px;
 }
+.icon, .icon1{
+    margin-right: 7px;
+}
+.icon1{
+    margin-left: 5px;
+}
+/* navigation ends here */
+
+/* Banner starts here */
 .banner{
     display: flex;
     justify-content: space-between;
@@ -152,22 +161,21 @@ body{
     border-radius: 15px;
     margin-left: 10px;
 }
-/* .banner-img{
-    margin-left: 200px;
-} */
 .banner-img img{
     height: 420px;
     width: 420px;
     margin-right: 125px;
-    /* margin-left: 200px; */
-    /* width: 50%; */
 }
+/* Banner ends here */
+
+/* banner reverse starts here */
 .banner-reverse{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     flex-direction: row-reverse;
+    margin-bottom: 50px;
     /* max-width: 1130px; */
 }
 .banner-reverse-detail h2{
@@ -208,4 +216,98 @@ body{
     width: 500px;
     height: 300px;
     margin-left: 100px;
+}
+/* banner reverse ends here */
+
+/* Online games part starts here */
+.online-games{
+    margin-bottom: 60px;
+}
+.online-games .card-details{
+    text-align: center;
+
+}
+.online-games .card-details .f-vdos{
+    background-image: linear-gradient(to bottom,#6e4ad1,#d2279f);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 1000;
+}
+.online-games .card-details .game-detail{
+    font-weight:700;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.online-games .card-details h6{
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.online-games .card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card-item{
+    padding: 10px;
+}
+.card-item{
+    height: 300px;
+    width: 300px;
+}
+.card-item img{
+    height: 250px;
+    width: 250px;
+}
+
+
+
+/* Careers parts starts here */
+.careers{
+    display: flex;
+    align-items: center;
+    background-color: #FF42A5;
+}
+.careers .career{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.careers .car-det{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.all-positions-detail p{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.all-positions-detail2 p{
+    text-align: right;
+    font-size: 12px;
+}
+.all-positions-detail{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.careers img{
+    height: 600px;
+    width: 600px;
+}
+.all-positions {
+    /* display: flex; */
+    align-items: center;
+    margin-left: 133px;
+    color: white;
+}
+.all-positions-img img{
+    margin-left: 90px;
+}
+
+.all-positions .btn2{
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #FF42A5;
+    font-weight: 700;
 }
