@@ -93,7 +93,6 @@ body{
 }
 .sign-go-btn{
     margin-top: 15px;
-    /* gap: 20px; */
 }
 .sign-go-btn .sign-in{
     background-color: #FF42A5;
@@ -114,7 +113,6 @@ body{
     height: 300px;
     width: 100%;
     padding: 0 120px;
-    /* margin-right: 300px; */
 }
 /* Banner ends here */
 
@@ -527,7 +525,6 @@ body{
     
     .logo h5{
         font-size: 12px; 
-        /* margin-top: 10px; */
     } 
     .social-logo, .info{
         grid-template-columns: repeat(3,1fr);
@@ -541,19 +538,17 @@ body{
         margin: 0 0 0 0;
     }
 }
-/* Your existing CSS code above this line */
 
-/* Tablet (min-width: 576px) and (max-width: 992px) */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .navigation {
         flex-direction: column;
-        align-items: center; /* Center the logo-container */
+        align-items: center;
     }
     .logo-container {
         width: 100%;
         display: flex;
-        justify-content: center; /* Center both logo and text */
-        align-items: center; /* Center both logo and text */
+        justify-content: center; 
+        align-items: center; 
     }
     .logo-container img {
         width: 50px;
@@ -567,19 +562,20 @@ body{
         width: 100%;
         margin-top: 15px;
         justify-content: center;
-        gap: 20px; /* Remove the gap between links */
+        gap: 20px; 
     }
     .nav-items-container a {
         margin-bottom: 5px;
     }
-    /* Other existing CSS for tablet view */
+    
     .banner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #FFF;
         background: url(Group\ 14.png);
-        padding: 0 30px; /* Add left and right padding */
+        padding: 0 30px;
+       
     }
     .banner-detail {
         margin-left: 0;
@@ -607,13 +603,13 @@ body{
     }
     
       .relative-position-detail-img {
-        margin-right: 30px; /* Add space to the right side */
+        margin-right: 30px; 
         top: 0;
         position: relative;
     }
     .img1 img {
-        width: 400%; /* Increase the width of img1 */
-        max-height: 450px; /* Limit the height to maintain aspect ratio */
+        width: 400%; 
+        max-height: 450px; 
         margin: 0 auto;
         display: block;
     }
@@ -655,4 +651,3 @@ body{
     }
 }
 
-/* Your existing CSS code below this line */
