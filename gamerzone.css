@@ -111,9 +111,10 @@ body{
     margin-left: 10px;
 }
 .banner-img img{
-    height: 420px;
-    width: 220px;
-    /* margin-right: 125px; */
+    height: 300px;
+    width: 100%;
+    padding: 0 120px;
+    /* margin-right: 300px; */
 }
 /* Banner ends here */
 
@@ -161,9 +162,9 @@ body{
     text-align: right;
 }
  .banner-reverse-img img{
-    width: 200px;
-    height: 300px;
-    margin-left: 100px;
+    width: 100%;
+    height: 250px;
+    margin-left: 90px;
 }
 /* banner reverse ends here */
 
@@ -454,11 +455,6 @@ body{
 /* Mobile large responsive starts here */
 
 @media screen and (max-width: 576px) {
-    /* *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    } */
     
     .logo-container, .banner-detail{
         justify-content: center;
@@ -518,10 +514,6 @@ body{
         text-align: center;
         margin: 0 auto;
     }
-    /* .logo-title{
-        grid-template-columns: 1fr; 
-    max-width: 100%; 
-    } */
     .logo-title2 {
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
@@ -529,18 +521,10 @@ body{
     .logo-title1 {
         grid-template-columns: repeat(2,1fr);
         width: max-content;
-        margin: 0 auto; /* Center the grid horizontally */
+        margin: 0 auto; 
         max-width: 600px;
-        /* text-align: center; */
-        /* align-items: center; */
-        /* margin: 0 auto; */
-        /* justify-content: center; */
     }
     
-     /* .logo img {
-        height: auto;
-        width: 40px;
-    }*/
     .logo h5{
         font-size: 12px; 
         /* margin-top: 10px; */
@@ -557,3 +541,118 @@ body{
         margin: 0 0 0 0;
     }
 }
+/* Your existing CSS code above this line */
+
+/* Tablet (min-width: 576px) and (max-width: 992px) */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center; /* Center the logo-container */
+    }
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center both logo and text */
+        align-items: center; /* Center both logo and text */
+    }
+    .logo-container img {
+        width: 50px;
+        height: 25px;
+        object-fit: cover;
+    }
+    .logo-container p {
+        font-size: 25px;
+    }
+    .nav-items-container {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+        gap: 20px; /* Remove the gap between links */
+    }
+    .nav-items-container a {
+        margin-bottom: 5px;
+    }
+    /* Other existing CSS for tablet view */
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFF;
+        background: url(Group\ 14.png);
+        padding: 0 30px; /* Add left and right padding */
+    }
+    .banner-detail {
+        margin-left: 0;
+    }
+    .banner-img img {
+        height: 300px;
+        width: 100%;
+        margin: 0;
+    }
+    .banner-reverse {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .banner-reverse-detail {
+        text-align: center;
+        margin-right: 0;
+    }
+    .banner-reverse-img img {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+    .online-games .card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+      .relative-position-detail-img {
+        margin-right: 30px; /* Add space to the right side */
+        top: 0;
+        position: relative;
+    }
+    .img1 img {
+        width: 400%; /* Increase the width of img1 */
+        max-height: 450px; /* Limit the height to maintain aspect ratio */
+        margin: 0 auto;
+        display: block;
+    }
+    .img2 img {
+        height: 120px;
+        width: auto;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .logo-title1 {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100%;
+    }
+    .logo-title2 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+    .logo h5 {
+        font-size: 12px;
+    }
+    .careers .all-positions-img img {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+    }
+    .footer-part .info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-part .social-logo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-part .terms {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-part .last-para {
+        font-size: 8px;
+    }
+}
+
+/* Your existing CSS code below this line */
