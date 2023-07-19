@@ -9,48 +9,6 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
-/* .navigation{
-    min-height: 60px;
-}
-.gamer img{
-    width: 40px;
-    height: 25px;
-}
-.gamer p{
-    font-size: 25px;
-
-    font-weight: 700;
-
-}
- .gm{
-    color: #FF42A5 100%;
-}
-.gamer{
-    width: 50%;
-    align-items: center;
-    display: flex;
-    gap: 10px;
-}
- .navber{
-    border: 1px solid tomato;
-    width: 50%;
-    justify-content: space-between;
-    gap: 30px;
-    margin-left: 20px;
-    align-items: center;
-    text-align: center;
-}
-.navber a{
-    text-decoration: none;
-    gap: 15px;
-}
-.navigation{
-    min-width: 1200px;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-} */
 
 .navigation{
     min-height: 50px;
@@ -243,29 +201,124 @@ body{
     margin-bottom: 30px;
 }
 .online-games .card{
+    gap: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    padding-inline: 10%;
 }
 .card-item{
-    padding: 10px;
+    position: relative;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-inline: auto; */
+    /* width: max-content; */
+    /* padding: 10px; */
+    /* overflow: hidden; */
 }
-.card-item{
+.card-item p{
+    width: 100%;
+}
+/* .card-item{
     height: 300px;
     width: 300px;
-}
+} */
+
 .card-item img{
+    border-radius: 5px;
+    width: 100%;
     height: 250px;
-    width: 250px;
+    object-fit: cover;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(197, 194, 194); */
+    background-color: rgba(67, 66, 66, 0.7);
+    border: 3px solid #FF42A5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay .icon {
+    width: 50px; /* Adjust the size of the icon */
+    height: 50px; /* Adjust the size of the icon */
+    border-radius: 100%;
+  }
+  
+  .watch-now {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
 
+/* Online games part ends here */
 
-
+/* position part starts here */
+.relative-position{
+    display: flex;
+    padding-inline: 10%;
+    gap: 200px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.relative-position-detail{
+    /* border: 1px solid tomato; */
+    text-align: right;
+    /* width: 200px; */
+    /* width: 50%; */
+    /* margin-left: 103px; */
+  
+}
+.relative-position-detail .details1{
+    width: 350px;
+}
+.relative-position-detail1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.relative-position-detail-img {
+    /* width: 50%; */
+    
+}
+.img1 img{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    /* margin-right: 130px; */
+}
+.img2 img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: -1150px;
+    right: 430px;
+}
 /* Careers parts starts here */
 .careers{
     display: flex;
     align-items: center;
     background-color: #FF42A5;
     margin-bottom: 70px;
+    margin-top: 80px;
 }
 .careers .career{
     font-size: 30px;
@@ -295,7 +348,6 @@ body{
     width: 600px;
 }
 .all-positions {
-    /* display: flex; */
     align-items: center;
     margin-left: 133px;
     color: white;
@@ -349,4 +401,72 @@ body{
 }
 /* Logo part ends here */
 
-  
+/* Footer part starts here */
+.footer-part{
+    background-color: #0B0223;
+    justify-content: center;
+    padding: 20px 0 70px 0;
+    text-align: center;
+}
+.footer-part .logo-frame{
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.logo-frame img{
+    width: 50px;
+    height: 25px;
+    object-fit: cover;
+}
+.logo-frame p{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.info{
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+}
+.social-logo{
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.terms{
+    color: white;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 10px;
+}
+.footer-part .last-para{
+    color: white;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 10px;
+}
+/* Footer part ends here */
+
+
+/* Mobile large responsive starts here */
+
+@media screen and (max-width: 576px) {
+    .logo-container{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .nav-items-container a{
+        margin-bottom: 10px;
+    }
+    .navigation, .nav-items-container{
+        flex-direction: column;
+    }
+}
