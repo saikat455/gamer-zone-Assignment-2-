@@ -8,8 +8,6 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
-
-
 .navigation{
     min-height: 50px;
     display: flex;
@@ -114,8 +112,8 @@ body{
 }
 .banner-img img{
     height: 420px;
-    width: 420px;
-    margin-right: 125px;
+    width: 220px;
+    /* margin-right: 125px; */
 }
 /* Banner ends here */
 
@@ -163,7 +161,7 @@ body{
     text-align: right;
 }
  .banner-reverse-img img{
-    width: 500px;
+    width: 200px;
     height: 300px;
     margin-left: 100px;
 }
@@ -290,6 +288,7 @@ body{
     margin-bottom: 70px;
     margin-top: 80px;
 }
+
 .careers .career{
     font-size: 30px;
     font-weight: 700;
@@ -343,6 +342,7 @@ body{
 }
 .logo{
     display: flex;
+    text-align: center;
     align-items: center;
     gap: 10px;
     background-color: #f6f5f9ac;
@@ -454,11 +454,12 @@ body{
 /* Mobile large responsive starts here */
 
 @media screen and (max-width: 576px) {
-    *{
+    /* *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
+    
     .logo-container, .banner-detail{
         justify-content: center;
         margin-bottom: 10px;
@@ -474,7 +475,7 @@ body{
         flex-direction: column;
     }
     
-    .banner-img{
+    .banner-img img{
         height: 100%;
         width: 100%;
         margin: 0 auto;
@@ -517,20 +518,42 @@ body{
         text-align: center;
         margin: 0 auto;
     }
-    .logo-title2{
-        grid-template-columns: repeat(3,1fr);
+    /* .logo-title{
+        grid-template-columns: 1fr; 
+    max-width: 100%; 
+    } */
+    .logo-title2 {
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
     }
-    .logo-title1{
-        grid-template-columns: repeat(3,1fr);
+    .logo-title1 {
+        grid-template-columns: repeat(2,1fr);
+        width: max-content;
+        margin: 0 auto; /* Center the grid horizontally */
+        max-width: 600px;
+        /* text-align: center; */
+        /* align-items: center; */
+        /* margin: 0 auto; */
+        /* justify-content: center; */
     }
-    .logo-title1 .logo img h5{
-        height: 40px;
+    
+     /* .logo img {
+        height: auto;
         width: 40px;
-    }
+    }*/
+    .logo h5{
+        font-size: 12px; 
+        /* margin-top: 10px; */
+    } 
     .social-logo, .info{
         grid-template-columns: repeat(3,1fr);
     }
     .terms{
         grid-template-columns: repeat(2,1fr);
+    }
+    .careers .all-positions-img img{
+        height: 100%;
+        width: 100%;
+        margin: 0 0 0 0;
     }
 }
